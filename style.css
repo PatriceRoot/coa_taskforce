@@ -37,7 +37,9 @@
           span {
             display: inline-block;
             color: rgb(199, 197, 197);
-            margin: 15px 0;
+            margin: 10px 0;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           }
         }
       }
