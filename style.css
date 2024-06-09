@@ -32,8 +32,9 @@
           font-size: 13px;
           position: absolute;
           padding: 0 40px;
-          top: calc(100vh - 120px);
+          top: calc(100vh - 150px);
           bottom: 0;
+          transition: top 0.5s ease-in-out;
           span {
             display: inline-block;
             color: rgb(199, 197, 197);
@@ -43,5 +44,16 @@
           }
         }
       }
+    }
+
+    .single_image:hover{
+      img {
+        transform: scale(1.1);
+        filter: blur(10px);
+        opacity: 0.3;
+      }
+     .image-info {
+       top: 75%;
+     }
     }
   }
