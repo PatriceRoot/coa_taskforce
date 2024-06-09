@@ -1,59 +1,67 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "PF Din Text Cond Pro", sans-serif;
-  }
-  a {
-    visibility: hidden;
-    color: rgb(113, 113, 151);
-  }
-  body {
-    background-color: black;
-    padding: 0 40px;
-  
-    .container {
-      display: flex;
-      gap: 3px;
-      height: 100vh;
-      div {
-        position: relative;
-        width: 25%;
-        height: 100%;
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: 100%;
-          transition: transform 0.2s;
-        }
-        .image-info {
-          height: auto;
-          color: white;
-          width: 25vw;
-          font-size: 13px;
-          position: absolute;
-          padding: 0 40px;
-          top: calc(100vh - 150px);
-          bottom: 0;
-          transition: top 0.5s ease-in-out;
-          span {
-            display: inline-block;
-            color: rgb(199, 197, 197);
-            margin: 10px 0;
-            font-size: 16px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          }
-        }
-      }
-    }
+  margin: 0;
+  padding: 0;
+  font-family: "PF Din Text Cond Pro", sans-serif;
+}
+a {
+  visibility: hidden;
+}
 
-    .single_image:hover{
+body {
+  background-color: black;
+  padding: 0 40px;
+
+  .container {
+    display: flex;
+    gap: 3px;
+    height: 100vh;
+    div {
+      position: relative;
+      width: 25%;
+      height: 100%;
+      overflow: hidden;
       img {
-        transform: scale(1.1);
-        filter: blur(10px);
-        opacity: 0.3;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.2s;
       }
-     .image-info {
-       top: 75%;
-     }
+      .image-info {
+        height: auto;
+        color: white;
+        width: 25vw;
+        font-size: 13px;
+        position: absolute;
+        padding: 0 40px;
+        top: calc(100vh - 150px);
+        bottom: 0;
+        transition: top 0.5s ease-in-out;
+        span {
+          display: inline-block;
+          color: rgb(199, 197, 197);
+          margin: 10px 0;
+          font-size: 16px;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+      }
     }
   }
+
+  .single_image:hover {
+    img {
+      transform: scale(1.1);
+      filter: blur(10px);
+      opacity: 0.3;
+    }
+    .image-info {
+      top: 75%;
+    }
+    a{
+        visibility: visible;
+        color: rgb(44, 81, 124);;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+  }
+}
