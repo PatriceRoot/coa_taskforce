@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "PF Din Text Cond Pro", sans-serif;
 }
+
 a {
   visibility: hidden;
 }
@@ -49,7 +50,7 @@ body {
   .single_image:hover {
     img {
       transform: scale(1.1);
-      filter: blur(10px);
+      filter: blur(10px) grayscale(100%);
       opacity: 0.3;
     }
     .image-info {
