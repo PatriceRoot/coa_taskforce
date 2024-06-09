@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "PF Din Text Cond Pro", sans-serif;
+  }
+  a {
+    visibility: hidden;
+    color: rgb(113, 113, 151);
+  }
+  body {
+    background-color: black;
+    padding: 0 40px;
+  
+    .container {
+      display: flex;
+      gap: 3px;
+      height: 100vh;
+      div {
+        position: relative;
+        width: 25%;
+        height: 100%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          transition: transform 0.2s;
+        }
+        .image-info {
+          height: auto;
+          color: white;
+          width: 25vw;
+          font-size: 13px;
+          position: absolute;
+          padding: 0 40px;
+          top: calc(100vh - 120px);
+          bottom: 0;
+          span {
+            display: inline-block;
+            color: rgb(199, 197, 197);
+            margin: 15px 0;
+          }
+        }
+      }
+    }
+  }
